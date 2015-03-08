@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MadLibs</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="directions">Create a mad lib by writing a short story in the text box. Use the tags "noun", "verb", "adjective", and "adverb" to indicate blank fields. All stories must include exactly one of each tag.</string>
+    <string name="save">save</string>
+    <string name="title_activity_story">StoryActivity</string>
+    <string name="noun">noun</string>
+    <string name="verb">verb</string>
+    <string name="adj">adjective</string>
+    <string name="adv">adverb</string>
+    <string name="createTab">create</string>
+    <string name="playTab">play</string>
+    <string name="create">Create!</string>
+    <string name="story">Story will go here.</string>
+    <string name="welcome">Welcome to MadLibs!</string>
+    <string name="create_story_directions">Create a MadLibs story. Include all of the following keywords to be replaced later:</string>
+     <string name="keywords">noun verb adjective adverb</string>
+     <string name="story_directions">Use the form to fill in a random MadLibs</string>
+    
+    <color name="background_color">#c4ccff</color>
+    <color name="welcome_background_color">#FFFFFF</color>
+    <color name="blue">#121948</color>
+    <color name="orange">#ffb737</color>
+
+</resources>

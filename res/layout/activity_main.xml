@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project.madlibs.MainActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="@color/background_color" >
+
+    <fragment
+        android:id="@+id/WelcomeFragment"
+        android:name="project.madlibs.WelcomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/welcome_fragment" />
+
+    <fragment
+        android:id="@+id/directionsFragment"
+        android:name="project.madlibs.DirectionsFragment"
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/WelcomeFragment"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="16dp"
+        class="project.madlibs.DirectionsFragment"
+        tools:layout="@layout/directions_fragment" />
+
+    <fragment
+        android:id="@+id/inputFragment"
+        android:name="project.madlibs.InputFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/directionsFragment"
+        android:layout_marginBottom="21dp"
+        android:layout_marginLeft="41dp"
+        android:layout_toRightOf="@+id/directionsFragment"
+        class="project.madlibs.InputFragment"
+        tools:layout="@layout/input_fragment" />
+
+    <fragment
+        android:id="@+id/buttonFragment"
+        android:name="project.madlibs.ButtonFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/directionsFragment"
+        android:layout_below="@+id/directionsFragment"
+        android:layout_marginRight="53dp"
+        android:layout_marginTop="29dp"
+        tools:layout="@layout/button_fragment" />
+
+</RelativeLayout>
+

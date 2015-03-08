@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/noun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/noun" >
+        <requestFocus/>
+        </EditText>
+
+    <EditText
+        android:id="@+id/verb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/noun"
+        android:layout_below="@+id/noun"
+        android:ems="10"
+        android:hint="@string/verb" >
+        
+    </EditText>
+
+    <EditText
+        android:id="@+id/adj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/verb"
+        android:layout_below="@+id/verb"
+        android:ems="10"
+        android:hint="@string/adj" />
+
+    <EditText
+        android:id="@+id/adv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adj"
+        android:layout_below="@+id/adj"
+        android:ems="10"
+        android:hint="@string/adv" />
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="100dip"
+        android:layout_height="30dip"
+        android:layout_alignLeft="@+id/adv"
+        android:layout_below="@+id/adv"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/blue"
+        android:text="@string/create"
+        android:textColor="@color/orange" />
+
+</RelativeLayout>
